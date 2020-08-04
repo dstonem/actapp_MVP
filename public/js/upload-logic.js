@@ -8,7 +8,7 @@ const loadFile = (evt)=>{
     }
     FR.readAsDataURL(evt.target.files[0]);
     file = evt.target.files[0];
-    document.getElementById("submit").classList.remove("hidden")
+    document.getElementById("submit").classList.replace("hidden", "bttn")
 }
 
 const uploadToServer = (evt) =>{

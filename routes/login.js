@@ -56,6 +56,7 @@ router.post('/register', async (req,res,next) => {
     let cause2 = req.body.cause2
     let cause3 = req.body.cause3
     let user_id
+    let profilePic
 
     if(req.session) {
         req.session.username = username
