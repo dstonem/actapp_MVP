@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="css/html" href="/public/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        #profile-info {
+            display: flex;
+            justify-content: space-between;
+            position:fixed;
+            width:100%;
+            max-height: 20vh;
+            height: 100%;
+            /* margin:25px 0px; */
+            font-size: 3em;
+            margin: 70px 0 0 50px;
+            padding: 0 20px;
+        }
+
+        #profile-img {
+            border-radius: 50%;
+            width:100px;
+            height:100px;
+        }
+
+        .profile h2 {
+            margin-left:10px;
+        }
+
+        #profile-feed {
+            max-width:27%;
+            height:90%;
+            position:absolute;
+            top:60px;
+            right:0;
+            overflow: scroll;
+            display:flex;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+        }
+        
+        .profile-feed-post-container {
+            width:100%;
+            max-height:50%;
+            overflow:hidden;
+            margin:5px 0;
+            position:relative;
+        }
+
+        .profile-feed-post-container:after {
+            content: "";
+            display: block;
+            
+        }
+
+        .profile-feed-img {
+            min-width:150%;
+            max-height:100%;
+            margin-left:-33%;
+        }
+
+        .cause-icons {
+            position: relative;
+            bottom:64px;
+            left:10px;
+        }
+
+    </style>
+    <title>Profile</title>
+</head>
+<body>
+    ${headerNav}
+    <div id="profile-info">
+        <!-- Need to change the src here to a profile pic pulled from the database -->
+        <div class="profile">
+            <div id="profile-img">
+            </div>
+            <h2>${firstName}</h2>
+        </div>
+        
+    </div>
+    
+    <div id="profile-feed">
+    
+    </div>
+    <div class="action-list">
+        <ul style='list-style-type: none;'>
+            <li><a href="https://www.fultoncountyga.gov/services/voting-and-elections/early-voting-locations"><button>Vote Early!</button></a></li>
+            <li><a href="https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia"><button>Print and distribute mail-in ballot application forms</button></a></li>
+            <li><a href="https://www.standwithbre.com/"><button>Call to demand justice for Breonna Taylor</button></a></li>
+        </ul>
+    </div>
+    <script src="/js/img-to-profile.js" type="module"></script>
+</body>
+</html>

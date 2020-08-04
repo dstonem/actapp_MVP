@@ -1,0 +1,38 @@
+{
+  "name": "actapp",
+  "version": "1.0.0",
+  "description": "express social media app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:install": "createdb actappdb",
+    "db:destroy": "dropdb actappdb",
+    "db:init": "psql actappdb < schema.sql",
+    "db:reset": "npm run db:destroy; npm run db:install && npm run db:init",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstonem/actapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dstonem/actapp/issues"
+  },
+  "homepage": "https://github.com/dstonem/actapp#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bulma": "^0.9.0",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "express-session": "^1.17.1",
+    "express-static": "^1.2.6",
+    "formidable": "^1.2.2",
+    "pg-promise": "^10.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

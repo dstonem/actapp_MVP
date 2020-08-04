@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Update User</title>
+</head>
+<body>
+    <form action="/updateUser" method="post">
+        <fieldset>
+            <legend>Update User</legend>
+            <input name="username" value='${user.username||""}' placeholder="Username"/>
+            <input name="password" value='${user.password||""}' placeholder="Password"/>
+            <input name="firstName" value='${user.firstName||""}' placeholder="First Name"/>
+            <input name="lastName" value='${user.lastName||""}' placeholder="Last Name"/>
+            <input name="email" value='${user.email||""}' placeholder="Email"/>
+            <input name="address" value='${user.address||""}' placeholder="Address"/>
+            <input name="city" value='${user.city||""}' placeholder="City"/>
+            <input name="state" value='${user.state||""}' placeholder="State"/>
+            <input name="zipcode" value='${user.zipcode||""}' placeholder="Zip Code"/>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+        <title>Login</title>
+    </head>
+    
+    <body>
+        <div class="lr-container">
+            <div class="main-content">
+                <div class="header">
+                    <h1>ACT APP</h1>
+                </div>
+                <form action="/login" method="post">
+                    <fieldset>
+                    <legend class="logintext">Login/Register</legend>
+                    <p>${message}</p>
+                    <input name="username" type="text" placeholder="Enter Username" class="input-1" />
+                    <input name="password" type="password" placeholder="Enter Password" class="input-2"/>
+                    <button class="bttn">Submit</button>
+                    </fieldset>
+                </form>
+                </div>
+            <div class="lr-link">
+                <div class="s-part">
+                    New?<a href="/login/register"> Register Here!</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

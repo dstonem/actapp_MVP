@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <title>Survey</title>
+</head>
+<body>
+    <div id="lr-container">
+        <div class="main-content">
+            <form action="/login/survey" method="post">
+                <p>${message}</p>
+                    <div class="header">
+                        <h1>ACT APP</h1>
+                    </div>
+                    <div>
+                        <h2 class="registertext">Pick a Cause</h2>
+                    </div>
+                        <label for="causes" class="cause">That Most Matters to You:</label>
+                            <select id="dropdown" name="cause1" class="input-1">
+                                <option value="" disabled selected>Select your option</option>
+                                <option value="blm">Black Lives Matter</option>
+                                <option value="election">Upcoming Election</option>
+                                <option value="climate">Climate Change</option>
+                                <option value="youth">Youth Development Services</option>
+                            </select>
+                    <label for="causes" class="cause">That Fairly Matters to You:</label>
+                        <select id="dropdown" name="cause2" class="input-1">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="blm">Black Lives Matter</option>
+                            <option value="election">Upcoming Election</option>
+                            <option value="climate">Climate Change</option>
+                            <option value="youth">Youth Development Services</option>
+                        </select>
+                    <label for="causes" class="cause">That Least Matters to You:</label>
+                        <select id="dropdown" name="cause3" class="input-1">
+                            <option value="" disabled selected>Select your option</option>
+                            <option value="blm">Black Lives Matter</option>
+                            <option value="election">Upcoming Election</option>
+                            <option value="climate">Climate Change</option>
+                            <option value="youth">Youth Development Services</option>
+                        </select>
+        </div>
+        <div class="causelink">
+            <div class="s-part">
+                <button type="submit" value="submit" class="bttn">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>    
+</body> 
+</html>

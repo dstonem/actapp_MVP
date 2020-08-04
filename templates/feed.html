@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="css/html" href="/public/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+        .profile {
+            position:fixed;
+            left:25px;
+            top:50px;
+            display: flex;
+            justify-content: space-between;
+            height: 90%;
+            margin:25px 0px;
+            font-size: 2em;
+        }
+
+        #profile-img {
+            border-radius: 50%;
+            width:50px;
+            height:50px;
+            
+        }
+    </style>
+
+    <title>Feed</title>
+</head>
+<body>
+    ${headerNav}
+    <div class="profile">
+        <img id="profile-img">
+        <h2>${firstName}</h2>
+    </div>
+    <section>
+        <div id="main-feed" class="column">
+            
+        </div>
+        <script src="/js/img-to-feed.js"></script>
+    </section>
+</body>
+</html>

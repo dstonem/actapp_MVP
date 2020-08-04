@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://kit.fontawesome.com/04a15f26c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="r-container">
+            <div class="register-content">
+            <div class="header">
+                <h1>ACT APP</h1>
+            </div>
+                    <form action="/login/register" method="post">
+                        <fieldset>
+                            <legend class="registertext">Register</legend>
+                            <p class="errortext">${message}</p>
+                            <div class="input-wrapper">
+                                <div class="form-inputs">
+                                    <input name="username" type="text" placeholder="Enter Username" class="input-1"/>
+                                    <input name="password" type="password" placeholder="Enter Password" class="input-1"/>
+                                    <input name="confirm-password" type="password" placeholder="Confirm Password" class="input-1"/>
+                                    <input name="firstName" type="text" placeholder="Enter First Name" class="input-1"/>
+                                    <input name="lastName" type="text" placeholder="Enter Last Name" class="input-1"/>
+                                </div>
+                                <div class="form-inputs1">
+                                    <input name="email" type="email" placeholder="Enter Email" class="input-1"/>
+                                    <input name="streetaddress" type="text" placeholder="Home Address" class="input-2"/>
+                                    <input name="city" type="text" placeholder="Enter City" class="input-2" />
+                                    <input name="state" type="text" placeholder="Enter State" class="input-2"/>
+                                    <input name="zipcode" type="text" placeholder="Enter Zipcode" class="input-2" />
+                                </div>
+                            </div>
+                            <button type="submit" type="text" value="submit" class="bttn">Sign Up</button>
+                        </fieldset>
+                    </form>
+            </div>
+                <div class="lr-link" style="padding-bottom: 5px;">
+                    <div class="s-part">
+                        Already Have an Account?<a href="/login"> Login Here!</a>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
